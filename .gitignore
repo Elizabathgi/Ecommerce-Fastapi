@@ -1,0 +1,59 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env/
+.venv/
+env/
+ENV/
+*.env
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# PyCharm
+.idea/
+
+# Python egg files
+*.egg
+*.egg-info/
+dist/
+build/
+
+# MySQL dump files
+*.sql
+
+# Test cache
+.pytest_cache/
+
+# Coverage reports
+htmlcov/
+.coverage
+
+# Mypy / type checker
+.mypy_cache/
+
+# Uvicorn log files
+*.log
+
+# Docker
+*.pid
+
+# Local config
+settings_local.py
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Icon?
+desktop.ini
+
+# Environment & dependency management
+Pipfile.lock
+poetry.lock
