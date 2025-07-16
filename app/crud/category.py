@@ -50,7 +50,14 @@ def update_category(db: Session, category_id: int, updates: CategoryUpdate):
         setattr(category, key, value)
     db.commit()
     db.refresh(category)
-    return category
+    return JSONResponse(
+        status_code=status.HTTP_200_OK,
+        content = { 
+            "status" : 200,
+            "message" : "update success!",
+            "data": jsonable_encoder(category)
+        }
+    )
 
 def delete_category(db: Session, category_id: int):
     category = db.query(Category).filter(Category.id == category_id).first()
